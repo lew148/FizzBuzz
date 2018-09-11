@@ -1,37 +1,40 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
 
 
         for (Integer i = 1; i <= 300; i++) {
-            String result = "";
+            List<String> result = new ArrayList<>();
 
             if (i % 3 == 0) {
-                result = result + "Fizz";
+                result.add("Fizz");
             }
 
             if (i % 13 == 0) {
-                result = result + "Fezz";
+                result.add("Fezz");
             }
 
             if (i % 5 == 0) {
-                result = result + "Buzz";
+                result.add("Buzz");
             }
 
             if (i % 7 == 0) {
-                result = result + "Bang";
+                result.add("Bang");
             }
 
             if (i % 11 == 0) {
-                result = result + "Bong";
+                result.add("Bong");
             }
 
 
 
 
-            if (result == "") {
+            if (result.isEmpty()) {
                 System.out.println(i);
             } else {
                 System.out.println(result);
