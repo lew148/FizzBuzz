@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        for (Integer i = 1; i <= 150; i++) {
+        for (Integer i = 1; i <= 300; i++) {
             String result = "";
 
             if (i % 3 == 0) {
